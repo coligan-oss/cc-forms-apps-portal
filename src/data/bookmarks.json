@@ -69,6 +69,26 @@
       ]
     },
     {
+      "id": "apps",
+      "title": "Apps",
+      "items": [
+        {
+          "name": "Wherefour",
+          "url": "https://www.wherefour.com/login",
+          "icon": null,
+          "color": null,
+          "initials": "W4"
+        },
+        {
+          "name": "Monday.com",
+          "url": "https://auth.monday.com/auth/login_monday",
+          "icon": null,
+          "color": null,
+          "initials": "M"
+        }
+      ]
+    },
+    {
       "id": "production",
       "title": "Production",
       "items": [
