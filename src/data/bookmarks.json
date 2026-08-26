@@ -1,0 +1,140 @@
+{
+  "sections": [
+    {
+      "id": "whats-new",
+      "title": "New",
+      "items": [
+        {
+          "name": "Shutdown Procedures",
+          "url": "https://forms.monday.com/forms/e8c450e7f2f470d406b323587c077720?r=use1",
+          "icon": null,
+          "color": "#FF9800",
+          "initials": "SD"
+        },
+        {
+          "name": "Depal Closeout Procedures",
+          "url": "https://forms.monday.com/forms/648f8b2e4223d5fc3decbff09d0aff3d?r=use1",
+          "icon": null,
+          "color": "#9C27B0",
+          "initials": "DC"
+        },
+        {
+          "name": "Line Clearance and Changeover",
+          "url": "https://forms.monday.com/forms/d2836e40b7d6b8d30ecb99688225a190?r=use1",
+          "icon": null,
+          "color": "#00BCD4",
+          "initials": "LC"
+        }
+      ]
+    },
+    {
+      "id": "most-popular",
+      "title": "Most Popular",
+      "items": [
+        {
+          "name": "Startup Procedures",
+          "url": "https://forms.monday.com/forms/f08d857df423211dfecbc09a39f5db77?r=use1",
+          "icon": null,
+          "color": "#2196F3",
+          "initials": "SU"
+        },
+        {
+          "name": "Shutdown Procedures",
+          "url": "https://forms.monday.com/forms/e8c450e7f2f470d406b323587c077720?r=use1",
+          "icon": null,
+          "color": "#FF9800",
+          "initials": "SD"
+        },
+        {
+          "name": "Production Planner",
+          "url": "https://cc-production-planner.vercel.app/",
+          "icon": null,
+          "color": "#4CAF50",
+          "initials": "PP"
+        },
+        {
+          "name": "Preventative Maintenance Work Orders",
+          "url": "https://commoncollabs.monday.com/boards/18422434870",
+          "icon": null,
+          "color": "#FF5722",
+          "initials": "PM"
+        },
+        {
+          "name": "General Work Orders",
+          "url": "https://commoncollabs.monday.com/boards/18422788017",
+          "icon": null,
+          "color": "#607D8B",
+          "initials": "GW"
+        }
+      ]
+    },
+    {
+      "id": "production",
+      "title": "Production",
+      "items": [
+        {
+          "name": "Startup Procedures",
+          "url": "https://forms.monday.com/forms/f08d857df423211dfecbc09a39f5db77?r=use1",
+          "icon": null,
+          "color": "#2196F3",
+          "initials": "SU"
+        },
+        {
+          "name": "Shutdown Procedures",
+          "url": "https://forms.monday.com/forms/e8c450e7f2f470d406b323587c077720?r=use1",
+          "icon": null,
+          "color": "#FF9800",
+          "initials": "SD"
+        },
+        {
+          "name": "Depal Closeout Procedures",
+          "url": "https://forms.monday.com/forms/648f8b2e4223d5fc3decbff09d0aff3d?r=use1",
+          "icon": null,
+          "color": "#9C27B0",
+          "initials": "DC"
+        },
+        {
+          "name": "Line Clearance and Changeover",
+          "url": "https://forms.monday.com/forms/d2836e40b7d6b8d30ecb99688225a190?r=use1",
+          "icon": null,
+          "color": "#00BCD4",
+          "initials": "LC"
+        },
+        {
+          "name": "Production Planner",
+          "url": "https://cc-production-planner.vercel.app/",
+          "icon": null,
+          "color": "#4CAF50",
+          "initials": "PP"
+        }
+      ]
+    },
+    {
+      "id": "facilities",
+      "title": "Facilities",
+      "items": [
+        {
+          "name": "Red Tag / Lockout Procedures",
+          "url": "https://d9q6j1sqbc0w8.cloudfront.net/",
+          "icon": null,
+          "color": "#F44336",
+          "initials": "RT"
+        },
+        {
+          "name": "Preventative Maintenance Work Orders",
+          "url": "https://commoncollabs.monday.com/boards/18422434870",
+          "icon": null,
+          "color": "#FF5722",
+          "initials": "PM"
+        },
+        {
+          "name": "General Work Orders",
+          "url": "https://commoncollabs.monday.com/boards/18422788017",
+          "icon": null,
+          "color": "#607D8B",
+          "initials": "GW"
+        }
+      ]
+    }
+  ]
+}
