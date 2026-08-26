@@ -1,4 +1,5 @@
 import bookmarks from '../data/bookmarks.json';
+import { getIconForApp } from './icons.js';
 
 /**
  * Renders all bookmark sections into the #portal container.
@@ -12,16 +13,22 @@ function renderPortal() {
     sectionEl.className = `section section--${section.id}`;
     sectionEl.setAttribute('aria-label', section.title);
 
+    // Section heading with green accent bar
+    const headingWrap = document.createElement('div');
+    headingWrap.className = 'section__heading';
+
     const heading = document.createElement('h2');
     heading.className = 'section__title';
     heading.textContent = section.title;
-    sectionEl.appendChild(heading);
+    headingWrap.appendChild(heading);
+
+    sectionEl.appendChild(headingWrap);
 
     const grid = document.createElement('div');
     grid.className = 'section__grid';
 
     section.items.forEach((item) => {
-      grid.appendChild(createAppIcon(item, section.id === 'whats-new'));
+      grid.appendChild(createAppCard(item, section.id === 'whats-new'));
     });
 
     sectionEl.appendChild(grid);
@@ -30,34 +37,41 @@ function renderPortal() {
 }
 
 /**
- * Creates a single app icon bookmark element.
+ * Creates a single app card element.
  */
-function createAppIcon(item, showBadge = false) {
+function createAppCard(item, isNew = false) {
   const link = document.createElement('a');
-  link.className = 'app-icon';
+  link.className = 'app-card';
   link.href = item.url;
   link.target = '_blank';
   link.rel = 'noopener noreferrer';
   link.setAttribute('aria-label', `Open ${item.name}`);
 
-  const tile = document.createElement('div');
-  tile.className = 'app-icon__tile';
+  const card = document.createElement('div');
+  card.className = 'app-card__surface';
 
-  // Show the app name inside the tile
+  // Icon
+  const iconWrap = document.createElement('div');
+  iconWrap.className = 'app-card__icon';
+  iconWrap.innerHTML = getIconForApp(item.name);
+  card.appendChild(iconWrap);
+
+  // Name
   const nameEl = document.createElement('span');
-  nameEl.className = 'app-icon__name';
+  nameEl.className = 'app-card__name';
   nameEl.textContent = item.name;
-  tile.appendChild(nameEl);
+  card.appendChild(nameEl);
 
-  if (showBadge) {
+  // NEW badge
+  if (isNew) {
     const badge = document.createElement('span');
-    badge.className = 'app-icon__badge';
-    badge.setAttribute('aria-hidden', 'true');
-    tile.appendChild(badge);
+    badge.className = 'app-card__badge';
+    badge.textContent = 'NEW';
+    badge.setAttribute('aria-label', 'New application');
+    card.appendChild(badge);
   }
 
-  link.appendChild(tile);
-
+  link.appendChild(card);
   return link;
 }
 
