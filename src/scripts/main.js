@@ -42,20 +42,12 @@ function createAppIcon(item, showBadge = false) {
 
   const tile = document.createElement('div');
   tile.className = 'app-icon__tile';
-  tile.style.backgroundColor = item.color || '#1C1C1E';
 
-  if (item.icon) {
-    const img = document.createElement('img');
-    img.src = item.icon;
-    img.alt = '';
-    img.loading = 'lazy';
-    tile.appendChild(img);
-  } else {
-    const initials = document.createElement('span');
-    initials.className = 'app-icon__initials';
-    initials.textContent = item.initials || item.name.charAt(0);
-    tile.appendChild(initials);
-  }
+  // Show the app name inside the tile
+  const nameEl = document.createElement('span');
+  nameEl.className = 'app-icon__name';
+  nameEl.textContent = item.name;
+  tile.appendChild(nameEl);
 
   if (showBadge) {
     const badge = document.createElement('span');
@@ -65,11 +57,6 @@ function createAppIcon(item, showBadge = false) {
   }
 
   link.appendChild(tile);
-
-  const label = document.createElement('span');
-  label.className = 'app-icon__label';
-  label.textContent = item.name;
-  link.appendChild(label);
 
   return link;
 }
