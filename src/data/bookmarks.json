@@ -24,6 +24,13 @@
           "icon": null,
           "color": "#00BCD4",
           "initials": "LC"
+        },
+        {
+          "name": "Extract Pack Log",
+          "url": "https://commoncollabs.sharepoint.com/:x:/r/sites/FullertonLogs/_layouts/15/Doc.aspx?sourcedoc=%7BEC4E1924-6F8D-4018-8303-6938D2373A92%7D&file=EXTRACT%20PACK%20LOG.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1",
+          "icon": null,
+          "color": null,
+          "initials": "EP"
         }
       ]
     },
@@ -126,6 +133,13 @@
           "icon": null,
           "color": "#4CAF50",
           "initials": "PP"
+        },
+        {
+          "name": "Extract Pack Log",
+          "url": "https://commoncollabs.sharepoint.com/:x:/r/sites/FullertonLogs/_layouts/15/Doc.aspx?sourcedoc=%7BEC4E1924-6F8D-4018-8303-6938D2373A92%7D&file=EXTRACT%20PACK%20LOG.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1",
+          "icon": null,
+          "color": null,
+          "initials": "EP"
         }
       ]
     },
